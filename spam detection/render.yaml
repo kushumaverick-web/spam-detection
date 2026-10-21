@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: spamguard-ai
+    env: python
+    buildCommand: "pip install -r requirements.txt && python train_model.py"
+    startCommand: "uvicorn app:app --host 0.0.0.0 --port $PORT --workers 2"
+    plan: free
+    healthCheckPath: /api/health
+    autoDeploy: true

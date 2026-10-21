@@ -1,0 +1,17 @@
+services:
+  spamguard:
+    build: .
+    container_name: spamguard-ai
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+    volumes:
+      # Mount SQLite database volume so history & feedback persist across restarts
+      - ./spam_detector.db:/app/spam_detector.db
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

@@ -1,0 +1,222 @@
+{
+  "accuracy": 95.0,
+  "precision": 91.67,
+  "recall": 100.0,
+  "f1_score": 95.65,
+  "roc_auc": 0.9798,
+  "confusion_matrix": {
+    "true_negative": 16,
+    "false_positive": 2,
+    "false_negative": 0,
+    "true_positive": 22
+  },
+  "total_samples": 159,
+  "spam_samples": 88,
+  "ham_samples": 71,
+  "vocabulary_size": 1525,
+  "top_spam_words": [
+    {
+      "word": "claim",
+      "weight": 0.6877867745554672
+    },
+    {
+      "word": "000",
+      "weight": 0.6835407801253294
+    },
+    {
+      "word": "guaranteed",
+      "weight": 0.6578733905319708
+    },
+    {
+      "word": "notice",
+      "weight": 0.6242766531916059
+    },
+    {
+      "word": "update",
+      "weight": 0.5745828994059836
+    },
+    {
+      "word": "credit",
+      "weight": 0.5456085706080526
+    },
+    {
+      "word": "immediately",
+      "weight": 0.538958116644482
+    },
+    {
+      "word": "avoid",
+      "weight": 0.5260966376512322
+    },
+    {
+      "word": "account",
+      "weight": 0.5158174308598615
+    },
+    {
+      "word": "pay",
+      "weight": 0.5155440729351218
+    },
+    {
+      "word": "free",
+      "weight": 0.5080249530341138
+    },
+    {
+      "word": "alert",
+      "weight": 0.4916558887408022
+    },
+    {
+      "word": "verify",
+      "weight": 0.4829441362629092
+    },
+    {
+      "word": "http",
+      "weight": 0.4701010861971537
+    },
+    {
+      "word": "final",
+      "weight": 0.457219010612041
+    },
+    {
+      "word": "delivery",
+      "weight": 0.45465549775512354
+    },
+    {
+      "word": "save",
+      "weight": 0.44287460010224344
+    },
+    {
+      "word": "netflix",
+      "weight": 0.4248020589770737
+    },
+    {
+      "word": "security",
+      "weight": 0.42352442206416274
+    },
+    {
+      "word": "download",
+      "weight": 0.4147329817222212
+    },
+    {
+      "word": "storage",
+      "weight": 0.40216490702579283
+    },
+    {
+      "word": "invoice",
+      "weight": 0.4019570194087149
+    },
+    {
+      "word": "hours",
+      "weight": 0.3957029361185448
+    },
+    {
+      "word": "warning",
+      "weight": 0.39312003795074396
+    },
+    {
+      "word": "sign",
+      "weight": 0.391512891280848
+    }
+  ],
+  "top_ham_words": [
+    {
+      "word": "let",
+      "weight": 1.1119337770330548
+    },
+    {
+      "word": "know",
+      "weight": 1.0628822095342803
+    },
+    {
+      "word": "let know",
+      "weight": 1.0628822095342803
+    },
+    {
+      "word": "thank",
+      "weight": 0.9712729728721812
+    },
+    {
+      "word": "meeting",
+      "weight": 0.8685875254807326
+    },
+    {
+      "word": "hi",
+      "weight": 0.7498841214952074
+    },
+    {
+      "word": "staging",
+      "weight": 0.7021676155889034
+    },
+    {
+      "word": "order",
+      "weight": 0.6238281857828382
+    },
+    {
+      "word": "attached",
+      "weight": 0.6084047209987777
+    },
+    {
+      "word": "budget",
+      "weight": 0.5896369682420021
+    },
+    {
+      "word": "friday",
+      "weight": 0.5384916703160877
+    },
+    {
+      "word": "following",
+      "weight": 0.5349404842488819
+    },
+    {
+      "word": "support",
+      "weight": 0.5296264634784338
+    },
+    {
+      "word": "resolved",
+      "weight": 0.5288215883460052
+    },
+    {
+      "word": "thank reaching",
+      "weight": 0.5288215883460052
+    },
+    {
+      "word": "reaching",
+      "weight": 0.5288215883460052
+    },
+    {
+      "word": "support case",
+      "weight": 0.5288215883460052
+    },
+    {
+      "word": "case",
+      "weight": 0.5288215883460052
+    },
+    {
+      "word": "items",
+      "weight": 0.49555676032573087
+    },
+    {
+      "word": "review",
+      "weight": 0.4891992659659627
+    },
+    {
+      "word": "team",
+      "weight": 0.47053203821729483
+    },
+    {
+      "word": "sync",
+      "weight": 0.4686705708368215
+    },
+    {
+      "word": "pm",
+      "weight": 0.46664372283104977
+    },
+    {
+      "word": "dinner",
+      "weight": 0.4589223613576695
+    },
+    {
+      "word": "weekly",
+      "weight": 0.44753840334814055
+    }
+  ],
+  "model_architecture": "Ensemble (Soft Voting: Calibrated Logistic Regression + Multinomial Naive Bayes with Sublinear TF-IDF N-Grams)"
+}
